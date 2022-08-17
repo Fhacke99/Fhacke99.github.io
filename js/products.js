@@ -6,5 +6,5 @@ const options = {
   fetch("https://japceibal.github.io/emercado-api/cats_products/101", options)
     .then(response => response.json())
     .then(data => {
-        document.body.innerHTML = data.products
+        document.body.innerHTML = <h2>Hola2</h2>
     });
