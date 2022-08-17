@@ -4,7 +4,7 @@ const options = {
   
   // Petición HTTP
   fetch("https://japceibal.github.io/emercado-api/cats_products/101", options)
-    .then(response => response.text())
+    .then(response => response.json())
     .then(data => {
-        document.body.innerHTML = "<h1>Hola</h1>"
+        document.body.innerHTML = data.products
     });
